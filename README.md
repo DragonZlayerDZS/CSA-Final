@@ -1,2 +1,1 @@
-# CSA-Final
-Final for csa
+In the game you control a dolphin using the arrow keys to go left and right and the spacebar to jump. You have to jump from platform to platform to reach the top. Once you hit the top of the level, the next level starts and you have to keep doing it until you reach the last level. If you fall to the floor, the game ends and you have to restart and rerun the game. There are currently four levels.
