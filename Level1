@@ -1,0 +1,66 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Main Class / Driver for rest of program
+ * 
+ * @author Emmanuel Zelaya 
+ * @version 3.0
+ */
+public class Level1 extends World
+{
+    /**
+     * Constructor for objects of class Level1.
+     * 
+     */
+    public Level1()
+    {    
+        // Create a new world with 600x1000 cells with a cell size of 1x1 pixels.
+        super(600, 1000, 1);
+        prepare();//Calls prepare() to prepare world
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        //sets background to say: "LEVEL 1"
+        getBackground().drawImage(new GreenfootImage("\n\n\n\n\n\n\n\n\n\n\n\n\n\nLevel 1", 64, null, null), 40, 40);
+        //Creates, adds, and sets location for objects:
+        Jumper jumper = new Jumper();
+        addObject(jumper,56,333);
+        
+        Platform platform = new Platform(150, 30);
+        addObject(platform, 450, 400);
+
+        Platform platform2 = new Platform(150, 30);
+        addObject(platform2,461,228);
+
+        Platform platform3 = new Platform();
+        addObject(platform3,18,669);
+
+        Platform platform4 = new Platform();
+        addObject(platform4,541,488);
+
+        Platform platform5 = new Platform(100, 30);
+        addObject(platform5,242,604);
+
+        Platform platform6 = new Platform(100, 30);
+        addObject(platform6,549,232);
+
+        Platform platform7 = new Platform(70, 30);
+        addObject(platform7,274,136);
+        
+
+        jumper.setLocation(93,855);
+        platform.setLocation(56,899);
+        platform2.setLocation(432,805);
+        platform3.setLocation(50,670);
+        platform4.setLocation(574,495);
+        platform5.setLocation(309,368);
+        platform6.setLocation(568,223);
+        platform7.setLocation(381,110);
+        
+    }
+}
