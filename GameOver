@@ -1,0 +1,34 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Game Over Screen for when you lose
+ * 
+ * @author Emmanuel Zelaya 
+ * @version 1.1
+ */
+public class GameOver extends World
+{
+
+    /**
+     * Constructor for objects of class GameOver.
+     * 
+     */
+    public GameOver()
+    {    
+        super(600, 1000, 1);// Create a new world with 600x1000 cells with a 
+        //cell size of 1x1 pixels.
+        
+        prepare();//Calls prepare() to prepare world
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        lose lose = new lose();//Creates Object lose() to say: "GAME OVER"
+        addObject(lose,281,656);//Adds Object lose()
+        lose.setLocation(299,446);//Sets Location for lose()
+    }
+}
