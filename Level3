@@ -1,0 +1,61 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Third driver / Level 3 of game
+ * 
+ * @author Emmanuel Zelaya 
+ * @version 2.0
+ */
+public class Level3 extends World
+{
+
+    /**
+     * Constructor for objects of class Level3.
+     * 
+     */
+    public Level3()
+    {    
+        // Create a new world with 600x1000 cells with a cell size of 1x1 pixels.
+        super(600, 1000, 1); 
+        prepare();//calls prepare() to prepare world
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        //Types: "LEVEL 3" on background
+        getBackground().drawImage(new GreenfootImage("\n\n\n\n\n\n\n\n\n\n\n\n\n\nLevel 3", 64, null, null), 40, 40);
+        //Creates, adds, and sets the location for objects
+        Platform platform = new Platform(60, 30);
+        addObject(platform,126,876);
+        Jumper jumper = new Jumper();
+        addObject(jumper,128,829);
+        addObject(platform,168,887);
+        platform.setLocation(151,872);
+        Platform platform2 = new Platform(60, 30);
+        addObject(platform2,341,795);
+        Platform platform3 = new Platform(60, 20);
+        addObject(platform3,162,690);
+        Platform platform4 = new Platform(60, 20);
+        addObject(platform4,498,706);
+        Platform platform5 = new Platform(60, 20);
+        addObject(platform5,36,562);
+        Platform platform6 = new Platform(60, 20);
+        addObject(platform6,312,567);
+        Platform platform7 = new Platform(60, 20);
+        addObject(platform7,508,519);
+        Platform platform8 = new Platform(60, 20);
+        addObject(platform8,147,433);
+        Platform platform9 = new Platform(60, 20);
+        addObject(platform9,417,368);
+        Platform platform10 = new Platform(60, 20);
+        addObject(platform10,265,234);
+        Platform platform11 = new Platform(60, 20);
+        addObject(platform11,93,97);
+        Platform platform12 = new Platform(60, 20);
+        addObject(platform12,449,123);
+    }
+}
